@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: 50px;
+            text-align: center;
+        }
+        .heading{
+            justify-content: center;
+            display:flex;
+        }
+        h1{
+            background-color: red;
+            border-radius: 20px;
+            padding: 10px;
+            text-align: center;
+            font-family:Arial, Helvetica, sans-serif;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="heading"><h1>pengecekan tahun kabisat</h1></div>
+    
+    <script>
+        const bulan = parseInt(prompt("masukan = "))
+        const operator = bulan % 4
+
+        if(operator == 0){
+            document.write('<p>' + bulan + ' tahun kabisat</p>')
+        }else{
+            document.write('<p>' + bulan + ' bukan tahun kabisat</p>')
+        }
+    </script>
+</body>
+</html>
